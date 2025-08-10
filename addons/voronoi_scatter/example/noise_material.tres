@@ -1,0 +1,7 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://b44sd76vl0scs"]
+
+[ext_resource type="Texture2D" uid="uid://duqntwi2t2pk6" path="res://addons/voronoi_scatter/example/texture.tres" id="1_lec0n"]
+
+[resource]
+albedo_texture = ExtResource("1_lec0n")
+uv1_scale = Vector3(15, 15, 15)
