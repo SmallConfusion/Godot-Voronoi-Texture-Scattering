@@ -28,6 +28,10 @@ Rotates the texture randomly up to this value.
 
 Randomly scales the texture based on this value. 0 scale is equivalent to no change.
 
+#### Note on normal maps
+
+If using normal maps in png format, the voronoi pattern can be seen if looking at the material from a distance or with the light at grazing angles. To fix this, use normal map images in .exr format and disable "normal map" in the import settings.
+
 ### Example
 
 ```glsl
