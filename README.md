@@ -50,3 +50,7 @@ void fragment() {
 	NORMAL_MAP = VORONOI_NORMAL_TEXTURE_SAMPLE(texture_normal);
 }
 ```
+
+## Attribution
+
+Hash function taken from https://github.com/skeeto/hash-prospector/issues/19 licensed under MIT
