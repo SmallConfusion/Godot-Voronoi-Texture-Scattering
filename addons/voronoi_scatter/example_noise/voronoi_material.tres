@@ -1,6 +1,6 @@
 [gd_resource type="ShaderMaterial" load_steps=3 format=3 uid="uid://cmtxbdd37d2vu"]
 
-[ext_resource type="Texture2D" uid="uid://duqntwi2t2pk6" path="res://addons/voronoi_scatter/example/texture.tres" id="1_vrkkp"]
+[ext_resource type="Texture2D" uid="uid://duqntwi2t2pk6" path="res://addons/voronoi_scatter/example_noise/texture.tres" id="1_vrkkp"]
 
 [sub_resource type="Shader" id="Shader_tdbey"]
 code = "// NOTE: Shader automatically converted from Godot Engine 4.5.beta5's StandardMaterial3D.

@@ -1,0 +1,33 @@
+[gd_scene load_steps=6 format=3 uid="uid://cg5p0slwe7upu"]
+
+[ext_resource type="Material" uid="uid://cvkl1dh7nhwwy" path="res://addons/voronoi_scatter/example_grass/grass_voronoi.tres" id="2_d48o7"]
+[ext_resource type="PackedScene" uid="uid://dqnn1lhfrrmlg" path="res://addons/voronoi_scatter/example_grass/terrain_model.glb" id="2_yvx2r"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_a202f"]
+sky_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
+ground_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
+
+[sub_resource type="Sky" id="Sky_noarx"]
+sky_material = SubResource("ProceduralSkyMaterial_a202f")
+
+[sub_resource type="Environment" id="Environment_a0tk4"]
+background_mode = 2
+sky = SubResource("Sky_noarx")
+tonemap_mode = 2
+glow_enabled = true
+
+[node name="Node3D" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_a0tk4")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.894723, -0.442039, -0.0638152, -0.36721, 0.646758, 0.668477, -0.25422, 0.621535, -0.740991, 1.27554, 0.915472, 0)
+shadow_enabled = true
+
+[node name="terrain_model" parent="." instance=ExtResource("2_yvx2r")]
+
+[node name="Plane" parent="terrain_model" index="0"]
+surface_material_override/0 = ExtResource("2_d48o7")
+
+[editable path="terrain_model"]

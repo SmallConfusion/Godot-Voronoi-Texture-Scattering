@@ -11,5 +11,5 @@ config_version=5
 [application]
 
 config/name="Voronoi Texture Scattering"
-config/features=PackedStringArray("4.5")
+config/features=PackedStringArray("4.4")
 config/icon="uid://bajjwr5olbfeo"

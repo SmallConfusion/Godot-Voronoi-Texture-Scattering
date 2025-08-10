@@ -1,10 +1,10 @@
 [gd_scene load_steps=6 format=3 uid="uid://bofidekps6dqb"]
 
-[ext_resource type="Material" uid="uid://cmtxbdd37d2vu" path="res://addons/voronoi_scatter/example/voronoi_material.tres" id="1_jl4d0"]
+[ext_resource type="Material" uid="uid://cmtxbdd37d2vu" path="res://addons/voronoi_scatter/example_noise/voronoi_material.tres" id="1_jl4d0"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_a202f"]
-sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
-ground_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+sky_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
+ground_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
 
 [sub_resource type="Sky" id="Sky_noarx"]
 sky_material = SubResource("ProceduralSkyMaterial_a202f")
@@ -25,7 +25,7 @@ orientation = 1
 environment = SubResource("Environment_a0tk4")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
-transform = Transform3D(-0.89472306, -0.44203892, -0.063814946, -0.3064208, 0.50360775, 0.8077659, -0.32492626, 0.74228084, -0.58603925, 1.2755389, 0.9154717, 0)
+transform = Transform3D(-0.894723, -0.442039, -0.0638149, -0.306421, 0.503608, 0.807766, -0.324926, 0.742281, -0.586039, 1.27554, 0.915472, 0)
 shadow_enabled = true
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]

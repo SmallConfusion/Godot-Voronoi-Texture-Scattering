@@ -1,6 +1,8 @@
 # Voronoi Texture Scattering
 
-![An example of voronoi texture scattering](example.svg)
+<img alt="An example of voronoi texture scattering" src="example_noise.jpg" width="800px">
+
+<img alt="Another example of voronoi texture scattering" src="example_grass.jpg" width="800px">
 
 Voronoi texture scattering works by distributing small uvs based on a voronoi texture. Because of this, it breaks up repeating artifacts caused by tiling seamless textures. Unfortunately, it does create seams, though they are largely unnoticable on textures designed to be seamless.
 
