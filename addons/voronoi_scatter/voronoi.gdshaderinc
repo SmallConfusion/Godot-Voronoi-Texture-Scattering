@@ -36,7 +36,7 @@ uint hash(uint x) {
 	x ^= x >> 16u;
 	x *= 0x21f0aaadu;
 	x ^= x >> 15u;
-	x *= 0xd35a2d97u;
+	x *= 0x735a2d97u;
 	x *= x >> 15u;
 	return x;
 }
